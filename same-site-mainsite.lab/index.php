@@ -39,7 +39,7 @@ Route::add('/',function(){
     echo 'To delete the cookies please <a href="/delete_cookie">click here</a><br>';
     echo 'To login please <a href="/login">click here</a>';
 
-    echo "<br><br><br><br><p><a href='https://securityflow.io' target='_blank'>https://securityflow.io</a></p>";
+    echo "<br><br><br><br><p><a href='https://securityflow.io' target='_blank'>SecurityFlow.io</a></p>";
 });
 
 // get_cookie displays all cookies
@@ -69,7 +69,7 @@ Route::add('/set_cookie', function(){
         'path' => '/',
         'secure' => false,
         'httponly' => true,
-        'samesite' => 'strict',
+        'samesite' => 'Strict',
     ]);
 });
 
