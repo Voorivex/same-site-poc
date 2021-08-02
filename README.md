@@ -12,7 +12,7 @@ session_set_cookie_params([
     'samesite' => 'Lax'
 ]);
 ```
-Then add these lines into the `hosts` files:
+Then add the following lines into the `hosts` file:
 ```
 127.0.0.1 same-site-mainsite.lab
 127.0.0.1 xyz.subdomain.same-site-mainsite.lab
