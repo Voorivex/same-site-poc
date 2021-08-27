@@ -27,7 +27,7 @@ function display_data_form() {
 }
 
 // Include router class
-include('Route.php');
+include('route.php');
 include('header.php');
 
 // startpage
