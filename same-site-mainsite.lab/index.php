@@ -56,7 +56,7 @@ Route::add('/set_cookie', function(){
     echo "<pre>";
     echo "Please watch the header to see the response and set-cookie header";
 
-    setcookie('normal-test', 'SecurityFlow-Lax-cookie', [
+    setcookie('normal-test', 'SecurityFlow-Normal-cookie', [
         'expires' => time() + 86400,
         'path' => '/',
         'secure' => false,
