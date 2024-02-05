@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  samesite:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: samesite
+    ports:
+      - "80:80"
+    volumes:
+      - ./another-site-mainsite.lab/:/var/www/app/another
+      - ./same-site-mainsite.lab/:/var/www/app/main
+      - ./xyz.subdomain.same-site-mainsite.lab/:/var/www/app/sub
+    restart: unless-stopped
